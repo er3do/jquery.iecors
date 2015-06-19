@@ -30,6 +30,8 @@
             xhr.ontimeout = s.xhrFields.timeout;
 					}
 
+          xdr.onprogress = function() {};
+
           xdr.open( s.type, s.url );
 
           // XDR has no method for setting headers O_o
